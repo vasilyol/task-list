@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import { TaskList } from './TaskList';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app">
+            <div className="header">
+                <h1>What are your plans for today?</h1>
+            </div>
+            <TaskList />   
+        </div>
+    );
 }
 
 export default App;
